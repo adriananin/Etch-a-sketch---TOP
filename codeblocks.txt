@@ -1,0 +1,28 @@
+const div = document.querySelector('.example');
+div.addEventListener('mouseover', function(){
+    div.style.backgroundColor = 'red';
+});
+div.addEventListener('mouseout', function(){
+    div.style.backgroundColor = 'initial';
+});
+
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    alert(button.id);
+  });
+});
+
+or
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(function(button) {
+  button.addEventListener('click', onButtonClick);
+});
+
+function onButtonClick() {
+  alert(this.id);
+}
