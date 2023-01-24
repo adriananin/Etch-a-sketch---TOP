@@ -4,10 +4,21 @@
   background-color: #00ff99;
 }
 
+@font-face {
+  font-family: myFont;
+  src: url(fonts/DancingScript-VariableFont_wght.ttf);
+}
+
 h1 {
   padding: 50px;
   color: black;
   text-align: center;
+  font-family: myFont;
+}
+
+h1 img {
+  width: 20px;
+  height: 20px;
 }
 
 #container {
@@ -17,8 +28,6 @@ h1 {
   margin-right: 30%;
   margin-left: 30%;
   margin-bottom: 3%;
-  justify-content: center;
-  align-items: center;
 }
 
 .grid {
@@ -26,6 +35,7 @@ h1 {
   height: calc(100% / 16);
   background-color: white;
   transition: background-color 0.45s ease-in-out 0.15s;
+  padding: 10px 0;
 }
 
 button {
